@@ -1,7 +1,5 @@
 
 local myname, ns = ...
-local oUF = ns.oUF
-
 
 oUF.TagEvents["tekpp"] = "UNIT_ENERGY UNIT_FOCUS UNIT_MANA UNIT_RAGE UNIT_RUNIC_POWER UNIT_MAXENERGY UNIT_MAXFOCUS UNIT_MAXMANA UNIT_MAXRAGE UNIT_MAXRUNIC_POWER"
 oUF.Tags["tekpp"] = function(u) local c, m = UnitPower(u), UnitPowerMax(u) return c >= m and m ~= 100 and oUF.Tags["maxpp"](u) or oUF.Tags["perpp"](u).."%" end

@@ -9,9 +9,8 @@
 ## X-Category: Unitframes
 
 ## X-oUF: tekoUFembed
+## Dependencies: oUF
 
-wrathfix.lua
-oUF_embed\oUF.xml
 tags.lua
 factory.lua
 layout.lua

@@ -1,7 +1,4 @@
-
 local myname, ns = ...
-local oUF = ns.oUF
-
 
 -----------------------
 --      Cluster      --
@@ -20,9 +17,14 @@ oUF:SetActiveStyle("Classic - Small")
 local pet = oUF:Spawn("pet")
 pet:SetPoint('BOTTOMRIGHT', player, 'TOPRIGHT')
 
+local PetT = oUF:Spawn("pettarget")
+PetT:SetPoint('BOTTOMRIGHT', pet, 'TOPRIGHT')
+
 local focus = oUF:Spawn("focus")
 focus:SetPoint("BOTTOMLEFT", target, "TOPLEFT")
 
+local ToT = oUF:Spawn("targettarget")
+ToT:SetPoint("TOPLEFT", target, "BOTTOMRIGHT")
 
 ----------------------------
 --      Party frames      --
@@ -110,6 +112,13 @@ EclipseBarFrame:SetParent(f)
 EclipseBarFrame:ClearAllPoints()
 EclipseBarFrame:SetPoint("CENTER")
 
+---------------------------
+--        Totems         --
+---------------------------
+
+TotemFrame:SetParent(player)
+TotemFrame:ClearAllPoints()
+TotemFrame:SetPoint("TOP", player, "BOTTOM", 0, 18)
 
 -------------------------
 --      HOLY POWA      --

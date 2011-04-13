@@ -1,6 +1,5 @@
 
 local myname, ns = ...
-local oUF = ns.oUF
 
 local texture = [[Interface\AddOns\oUF_tek\textures\statusbar]]
 local smallheight, height, width = 31, 64, 170
